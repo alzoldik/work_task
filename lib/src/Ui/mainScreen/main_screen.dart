@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'Home.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -11,10 +12,10 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     List<Widget> _a = [
-      HomeScreen(),
-      HomeScreen(),
-      HomeScreen(),
-      HomeScreen(),
+      Home(),
+      Home(),
+      Home(),
+      Home(),
     ];
     return Directionality(
       textDirection: TextDirection.rtl,
@@ -31,24 +32,21 @@ class _HomeScreenState extends State<HomeScreen> {
                 Icons.car_rental,
               ),
               backgroundColor: Color.fromRGBO(74, 82, 193, 1),
-              // title: Text('الوكالات'),
-              label: "الوكالات",
+              title: Text('الوكالات'),
             ),
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.car_rental,
               ),
               backgroundColor: Color.fromRGBO(74, 82, 193, 1),
-              // title: Text('الخدمات'),
-              label: "الخدمات",
+              title: Text('الخدمات'),
             ),
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.car_rental,
               ),
               backgroundColor: Color.fromRGBO(74, 82, 193, 1),
-              // title: Text('التثمين'),
-              label: "التثمين",
+              title: Text('التثمين'),
             ),
             BottomNavigationBarItem(
               backgroundColor: Color.fromRGBO(74, 82, 193, 1),
@@ -56,8 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Icons.car_rental,
                 color: Colors.white,
               ),
-              // title: Text('التامين'),
-              label: "التامين",
+              title: Text('التامين'),
             ),
           ],
         ),
